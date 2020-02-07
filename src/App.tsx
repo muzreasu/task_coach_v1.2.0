@@ -1,9 +1,11 @@
 import * as React from 'react';
+import { hot } from 'react-hot-loader';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 import './App.css';
 import Page from './pages';
+import { isDev } from "./utils";
 
 class App extends React.Component {
   public render() {
@@ -15,4 +17,5 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default isDev() ? hot(module)(App) : App;
+

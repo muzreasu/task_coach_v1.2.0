@@ -25,7 +25,7 @@ const Board = () => {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>Boards</Breadcrumb.Item>
         </Breadcrumb>
-        <div style={{ background: '#fff', padding: 24, minHeight: 650 }}>Content</div>
+        <div style={{ background: '#fff', padding: 24, minHeight: 650 }}>Boards</div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>Muzrea ©2019 Created</Footer>
     </Layout>
